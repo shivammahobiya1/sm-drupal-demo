@@ -823,5 +823,8 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
   'driver' => 'mysql',
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
+  'pdo' => [
+    PDO::MYSQL_ATTR_SSL_CA => 'DigiCertGlobalRootCA.crt.pem',
+  ],
 );
 $settings['config_sync_directory'] = 'sites/default/files/config_uLwMRB7T4Bsghy2n4O4YnMQBSar5Vnpen_87OZAbx6eGEqYSxwhfuC5qVs3bdb_aOp7pvjYcBg/sync';
